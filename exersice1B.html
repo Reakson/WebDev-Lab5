@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Exercise 1 scenario B</h1>
+    <p>Please contact our support team via Telegram regarding the reward. Click the button below to go to Telegram!</p>
+    <button onclick="goToTelegram()">Go to Telegram</button>
+
+    <script>
+        function goToTelegram(){
+            const windowObj = window.open("https://web.telegram.org/a/", "_blank");
+            setTimeout(() => {
+                windowObj.location.replace("./fake_telegram.html");
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
